@@ -1,0 +1,85 @@
+object frmMensagem: TfrmMensagem
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lytLogin: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object GridLayout1: TGridLayout
+      Align = Client
+      ItemHeight = 100.000000000000000000
+      ItemWidth = 280.000000000000000000
+      Orientation = Horizontal
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 100.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 100.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lytUsuario: TLayout
+        Align = Client
+        Size.Width = 280.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblMensagem: TLabel
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Size.Width = 280.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Usu'#225'rio'
+          TabOrder = 0
+        end
+      end
+      object GridLayout2: TGridLayout
+        ItemHeight = 32.000000000000000000
+        ItemWidth = 280.000000000000000000
+        Orientation = Horizontal
+        Position.Y = 100.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ToolBar1: TToolBar
+          Align = Client
+          Margins.Left = 50.000000000000000000
+          Margins.Right = 50.000000000000000000
+          Size.Width = 180.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object SpeedButton1: TSpeedButton
+            Align = Left
+            Size.Width = 80.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Sim'
+            OnClick = SpeedButton1Click
+          end
+          object SpeedButton2: TSpeedButton
+            Align = Right
+            Position.X = 100.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'N'#227'o'
+            OnClick = SpeedButton2Click
+          end
+        end
+      end
+    end
+  end
+end

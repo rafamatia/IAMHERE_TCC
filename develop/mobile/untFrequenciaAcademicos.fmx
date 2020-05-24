@@ -1,0 +1,544 @@
+inherited frmFrequenciaAcademicos: TfrmFrequenciaAcademicos
+  Caption = 'Lista de Chamada dos Academicos'
+  ClientHeight = 521
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    Size.Height = 521.000000000000000000
+    inherited tbctrlPrincipal: TTabControl
+      Size.Height = 418.000000000000000000
+      TabIndex = 1
+      Sizes = (
+        320s
+        369s
+        320s
+        369s)
+      inherited tbitemListagem: TTabItem
+        IsSelected = False
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited toolSuperior: TToolBar
+          inherited lblTitulo: TLabel
+            Text = 'Filtros'
+          end
+        end
+        object Layout3: TLayout
+          Align = Client
+          Padding.Bottom = 4.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 321.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 7
+            Text = 'ITAMAR SOLOPAK'
+            Position.X = 5.000000000000000000
+            Position.Y = 22.000000000000000000
+            Enabled = False
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object cmbCursos: TComboBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 186.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+          end
+          object Label7: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 115.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Hor'#225'rio da Aula:'
+            TabOrder = 4
+          end
+          object Label8: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 169.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Curso:'
+            TabOrder = 2
+          end
+          object cmbHorarioAula: TComboBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 132.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            OnChange = cmbHorarioAulaChange
+          end
+          object Label9: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 223.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Disciplina:'
+            TabOrder = 1
+          end
+          object cmbDisciplinas: TComboBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'comboboxstyle'
+            TabOrder = 5
+          end
+          object lytBotoesInferiorFiltros: TLayout
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 282.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            object lytFazerChamada: TLayout
+              Align = Right
+              Position.X = 173.000000000000000000
+              Size.Width = 137.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              OnClick = lblFazerChamadaClick
+              object rndFazerChamada: TRoundRect
+                Align = Contents
+                Fill.Kind = Gradient
+                Fill.Gradient.Points = <
+                  item
+                    Color = xFF00E5AD
+                    Offset = 0.000000000000000000
+                  end
+                  item
+                    Color = xFF1DFFD8
+                    Offset = 0.621118009090423600
+                  end>
+                Fill.Gradient.StartPosition.X = 0.500000000000000000
+                Fill.Gradient.StartPosition.Y = 1.000000000000000000
+                Fill.Gradient.StopPosition.X = 0.499999970197677600
+                Fill.Gradient.StopPosition.Y = 0.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                OnClick = lblFazerChamadaClick
+              end
+              object lblFazerChamada: TLabel
+                Align = Client
+                StyledSettings = []
+                Size.Width = 137.000000000000000000
+                Size.Height = 35.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                TextSettings.Trimming = None
+                Text = 'Fazer chamada'
+                TabOrder = 2
+                OnClick = lblFazerChamadaClick
+              end
+              object ShadowEffect3: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.600000023841857900
+                ShadowColor = claBlack
+              end
+            end
+          end
+          object Layout6: TLayout
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 78.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            object edtData: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Left
+              TabOrder = 5
+              Text = '15/08/2019'
+              Enabled = False
+              Size.Width = 116.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object edtDiaDaSemana: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 7
+              Text = 'QUARTA-FEIRA'
+              Enabled = False
+              Size.Width = 194.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Label3: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 59.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Data / Dia da Semana:'
+            TabOrder = 0
+          end
+          object Label2: TLabel
+            Align = Top
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 310.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            Text = 'Professor:'
+            TabOrder = 3
+          end
+        end
+      end
+      inherited tbitemEdicao: TTabItem
+        IsSelected = True
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object ToolBar1: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label11: TLabel
+            Align = Contents
+            Size.Width = 320.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Lista de Chamada'
+            TabOrder = 1
+          end
+          object btnCancelar: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 32.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'cleareditbutton'
+            Text = 'Voltar'
+            OnClick = btnCancelarClick
+          end
+          object btnGravar: TSpeedButton
+            Align = Right
+            IconTintColor = claRoyalblue
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 264.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'donetoolbutton'
+            Text = 'Voltar'
+            OnClick = btnGravarClick
+          end
+        end
+        object lytFundoListaChamada: TLayout
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 268.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lsviewListaChamada: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 300.000000000000000000
+            Size.Height = 268.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+            ItemAppearanceObjects.ItemEditObjects.Text.TextColor = claMediumblue
+            ItemAppearanceObjects.ItemEditObjects.GlyphButton.Align = Center
+            ItemAppearanceObjects.HeaderObjects.Text.TextColor = claTurquoise
+            OnItemClick = lsviewListaChamadaItemClick
+          end
+        end
+        object Layout1: TLayout
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 58.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lytPresencaTodos: TLayout
+            Align = Right
+            Margins.Right = 7.000000000000000000
+            Position.X = 3.000000000000000000
+            Size.Width = 155.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object rndPresencaTodos: TRoundRect
+              Align = Contents
+              Fill.Kind = Gradient
+              Fill.Gradient.Points = <
+                item
+                  Color = xFF00E518
+                  Offset = 0.102484472095966300
+                end
+                item
+                  Color = xFF00A706
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Size.Width = 155.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              OnClick = lblPresencaTodosClick
+            end
+            object lblPresencaTodos: TLabel
+              Align = Client
+              StyledSettings = []
+              Size.Width = 155.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 13.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              TextSettings.Trimming = None
+              Text = 'PRESEN'#199'A P/ TODOS'
+              TabOrder = 2
+              OnClick = lblPresencaTodosClick
+            end
+            object ShadowEffect4: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+            end
+          end
+          object lytFaltaTodos: TLayout
+            Align = Right
+            Position.X = 165.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object rndFaltaTodos: TRoundRect
+              Align = Contents
+              Fill.Kind = Gradient
+              Fill.Gradient.Points = <
+                item
+                  Color = xFFE51800
+                  Offset = 0.416149079799652100
+                end
+                item
+                  Color = xFF6B0501
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              OnClick = lblFaltaTodosClick
+            end
+            object lblFaltaTodos: TLabel
+              Align = Client
+              StyledSettings = []
+              Size.Width = 145.000000000000000000
+              Size.Height = 28.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 13.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              TextSettings.Trimming = None
+              Text = 'FALTA P/ TODOS'
+              TabOrder = 2
+              OnClick = lblFaltaTodosClick
+            end
+            object ShadowEffect5: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+            end
+          end
+        end
+      end
+    end
+    inherited lytSuperior: TLayout
+      inherited Layout2: TLayout
+        OnClick = Layout2Click
+        inherited blNomeInstituicao: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          OnClick = blNomeInstituicaoClick
+        end
+        inherited Label1: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    inherited lytInferior: TLayout
+      Position.Y = 466.000000000000000000
+      inherited Layout5: TLayout
+        inherited Label4: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label5: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label6: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 24
+    Top = 408
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.qryProfessorHorario
+    ScopeMappings = <>
+    Left = 256
+    Top = 384
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'CUR_NOME'
+      Control = cmbCursos
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'DIS_DESCRICAO'
+      Control = cmbDisciplinas
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField3: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'PES_NOMECOMPLETO'
+      Control = lsviewListaChamada
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object memHorarioAula: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 152
+    Top = 384
+    object memHorarioAulaITEMINDEX: TIntegerField
+      FieldName = 'ITEMINDEX'
+    end
+    object memHorarioAulaHORARIO_ID: TIntegerField
+      FieldName = 'HORARIO_ID'
+    end
+    object memHorarioAulaDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 200
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = DM.qryListaChamada
+    ScopeMappings = <>
+    Left = 144
+    Top = 248
+  end
+end

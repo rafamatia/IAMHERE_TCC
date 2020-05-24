@@ -1,0 +1,72 @@
+inherited frmLogin_LgXhdpiPh: TfrmLogin_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited tbctrlLogin: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s)
+    inherited tbitemLogin: TTabItem
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 450.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Rectangle1: TRectangle
+        Size.Width = 450.000000000000000000
+        Size.Height = 646.000000000000000000
+        inherited lytLogin: TLayout
+          Size.Width = 450.000000000000000000
+          Size.Height = 646.000000000000000000
+          inherited GridLayout1: TGridLayout
+            ItemWidth = 360.000000000000000000
+            Margins.Top = 200.000000000000000000
+            Size.Width = 410.000000000000000000
+            Size.Height = 346.000000000000000000
+            inherited lytUsuario: TLayout
+              Size.Width = 360.000000000000000000
+              inherited Label1: TLabel
+                Size.Width = 360.000000000000000000
+              end
+              inherited Edit1: TEdit
+                Size.Width = 360.000000000000000000
+              end
+            end
+            inherited Layout1: TLayout
+              Size.Width = 360.000000000000000000
+              inherited Label2: TLabel
+                Size.Width = 360.000000000000000000
+              end
+              inherited Edit2: TEdit
+                Size.Width = 360.000000000000000000
+              end
+            end
+            inherited lytEntrar: TLayout
+              Size.Width = 360.000000000000000000
+              OnClick = lblEntrarClick
+              inherited RoundRect1: TRoundRect
+                Size.Width = 360.000000000000000000
+                OnClick = lblEntrarClick
+              end
+              inherited lblEntrar: TLabel
+                Size.Width = 360.000000000000000000
+                TextSettings.Font.StyleExt = {00060000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited tbitemMenuPrincipal: TTabItem
+      Size.Width = 225.000000000000000000
+      ExplicitSize.cx = 225.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lytMenuPrincipal: TLayout
+        Size.Width = 450.000000000000000000
+        Size.Height = 646.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,168 @@
+inherited frmCadDepartamentos: TfrmCadDepartamentos
+  Caption = 'frmCadModelo1'
+  Position = Designed
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    inherited tbctrlPrincipal: TTabControl
+      Sizes = (
+        320s
+        328s
+        320s
+        328s)
+      inherited tbitemListagem: TTabItem
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited toolSuperior: TToolBar
+          inherited lblTitulo: TLabel
+            Text = 'Departamentos'
+          end
+        end
+        object lsviewListaDepartamentos: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 280.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+          ItemAppearanceObjects.ItemEditObjects.Accessory.AccessoryType = Checkmark
+          OnItemClick = lsviewListaDepartamentosItemClick
+        end
+      end
+      inherited tbitemEdicao: TTabItem
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object ToolBar1: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label2: TLabel
+            Align = Contents
+            Size.Width = 320.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblTitulo'
+            TabOrder = 1
+          end
+          object SpeedButton1: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+          object SpeedButton3: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 72.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+        end
+        object ToolBar2: TToolBar
+          Position.Y = 48.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label3: TLabel
+            Align = Contents
+            Size.Width = 320.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblTitulo'
+            TabOrder = 1
+          end
+          object SpeedButton2: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+          object SpeedButton4: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 72.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+        end
+      end
+    end
+    inherited lytSuperior: TLayout
+      inherited Layout2: TLayout
+        inherited blNomeInstituicao: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label1: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+    inherited lytInferior: TLayout
+      inherited Layout5: TLayout
+        inherited Label4: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label5: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label6: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 72
+    Top = 336
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.qryDepartamentos
+    ScopeMappings = <>
+    Left = 72
+    Top = 280
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 76
+    Top = 229
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'DEP_DESCRICAO'
+      Control = lsviewListaDepartamentos
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

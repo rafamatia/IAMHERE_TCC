@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3403144E-B3D7-499F-A8E2-D88C9A718C49}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="mobile\IAMHERE.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="servidor\ServidorIAMHERE.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="fonte\desktop\ControleFrequencia.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="IAMHERE">
+        <MSBuild Projects="mobile\IAMHERE.dproj"/>
+    </Target>
+    <Target Name="IAMHERE:Clean">
+        <MSBuild Projects="mobile\IAMHERE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IAMHERE:Make">
+        <MSBuild Projects="mobile\IAMHERE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServidorIAMHERE">
+        <MSBuild Projects="servidor\ServidorIAMHERE.dproj"/>
+    </Target>
+    <Target Name="ServidorIAMHERE:Clean">
+        <MSBuild Projects="servidor\ServidorIAMHERE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServidorIAMHERE:Make">
+        <MSBuild Projects="servidor\ServidorIAMHERE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ControleFrequencia">
+        <MSBuild Projects="fonte\desktop\ControleFrequencia.dproj"/>
+    </Target>
+    <Target Name="ControleFrequencia:Clean">
+        <MSBuild Projects="fonte\desktop\ControleFrequencia.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ControleFrequencia:Make">
+        <MSBuild Projects="fonte\desktop\ControleFrequencia.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="IAMHERE;ServidorIAMHERE;ControleFrequencia"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="IAMHERE:Clean;ServidorIAMHERE:Clean;ControleFrequencia:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="IAMHERE:Make;ServidorIAMHERE:Make;ControleFrequencia:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

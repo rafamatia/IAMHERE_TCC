@@ -1,0 +1,97 @@
+inherited frmPrincipal_LgXhdpiTb: TfrmPrincipal_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited tbctrlPrincipal: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    Sizes = (
+      480s
+      780s
+      480s
+      780s)
+    inherited tbitemMenu: TTabItem
+      Size.Width = 240.000000000000000000
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lytBackground: TLayout
+        Size.Width = 480.000000000000000000
+        Size.Height = 780.000000000000000000
+        inherited lytSuperior: TLayout
+          Size.Width = 480.000000000000000000
+          inherited rctNomeInstituicao: TRectangle
+            Size.Width = 480.000000000000000000
+          end
+          inherited Layout2: TLayout
+            Size.Width = 480.000000000000000000
+            inherited blNomeInstituicao: TLabel
+              Size.Width = 480.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited Label1: TLabel
+              Size.Width = 480.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+        inherited lytInferior: TLayout
+          Position.Y = 725.000000000000000000
+          Size.Width = 480.000000000000000000
+          inherited Rectangle3: TRectangle
+            Size.Width = 480.000000000000000000
+          end
+          inherited Layout5: TLayout
+            Size.Width = 470.000000000000000000
+            inherited Label4: TLabel
+              Size.Width = 470.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited Label5: TLabel
+              Size.Width = 470.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+            inherited Label6: TLabel
+              Size.Width = 470.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+            end
+          end
+        end
+        inherited lytMenu: TGridLayout
+          Size.Width = 460.000000000000000000
+          Size.Height = 667.000000000000000000
+          inherited lytMenuFrequencia: TLayout
+            inherited imgMenuFrequencia: TImage
+              MultiResBitmap.Height = 48
+              MultiResBitmap.Width = 48
+            end
+            inherited lytOpcMenuFrequencia: TLayout
+              inherited lblMenuFrequencia: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+          inherited Layout1: TLayout
+            inherited Image1: TImage
+              MultiResBitmap.Height = 48
+              MultiResBitmap.Width = 48
+            end
+            inherited Layout4: TLayout
+              inherited Label3: TLabel
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited tbitemApoio: TTabItem
+      Size.Width = 240.000000000000000000
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lytPrincipal: TLayout
+        Size.Width = 480.000000000000000000
+        Size.Height = 780.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,257 @@
+object frmCadModelo: TfrmCadModelo
+  Left = 0
+  Top = 0
+  Caption = 'Tela de Modelo para Cadastro'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object lytBase: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tbctrlPrincipal: TTabControl
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 377.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = PlatformDefault
+      Sizes = (
+        320s
+        328s
+        320s
+        328s)
+      object tbitemListagem: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 160.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Listagem'
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object toolSuperior: TToolBar
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblTitulo: TLabel
+            Align = Contents
+            Size.Width = 320.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblTitulo'
+            TabOrder = 1
+          end
+          object btnVoltar: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+        end
+      end
+      object tbitemEdicao: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 160.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Edi'#231#227'o'
+        ExplicitSize.cx = 160.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+    object lytSuperior: TLayout
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object rctNomeInstituicao: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF03AFF0
+            Offset = 0.009316770359873772
+          end
+          item
+            Color = xFF1EEFFE
+            Offset = 0.757763981819152800
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object blNomeInstituicao: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 320.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Sitka Small'
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFFEFE3C
+          TextSettings.HorzAlign = Center
+          TextSettings.Trimming = None
+          Text = 'FAFIMAN'
+          TabOrder = 2
+        end
+        object Label1: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 320.000000000000000000
+          Size.Height = 15.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Sitka Small'
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          TextSettings.Trimming = None
+          Text = 'Funda'#231#227'o Faculdade Filosofia Ci'#234'ncias e Letras de Mandaguari'
+          TabOrder = 1
+        end
+      end
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object lytInferior: TLayout
+      Align = Bottom
+      Position.Y = 425.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle3: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF03AFF0
+            Offset = 0.003105590119957924
+          end
+          item
+            Color = xFF1EEFFE
+            Offset = 0.757763981819152800
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object Layout5: TLayout
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 310.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label4: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 310.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.Trimming = None
+          Text = 'Funda'#231#227'o Faculdade Filosofia Ci'#234'ncias e Letras de Mandaguari'
+          TabOrder = 3
+        end
+        object Label5: TLabel
+          Align = Top
+          StyledSettings = []
+          Position.Y = 17.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.Trimming = None
+          Text = 'Rua Ren'#234' T'#226'cola, N'#186' 152, Centro, Mandaguari - PR, 86975-000'
+          TabOrder = 2
+        end
+        object Label6: TLabel
+          Align = Top
+          StyledSettings = []
+          Position.Y = 34.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Tahoma'
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.Trimming = None
+          Text = 'Fone:(44) 3233-1356 / Fax: (44) 3233-2411'
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 144
+    Top = 224
+    object actMudarAba: TChangeTabAction
+      Category = 'Tab'
+    end
+  end
+end

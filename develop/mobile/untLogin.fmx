@@ -1,0 +1,235 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object tbctrlLogin: TTabControl
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      320s
+      431s
+      320s
+      431s)
+    object tbitemLogin: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 160.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Login'
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF009CBB
+            Offset = 0.114906832575798000
+          end
+          item
+            Color = xFF0AF6FE
+            Offset = 0.354037255048751800
+          end
+          item
+            Color = xFF125E6C
+            Offset = 0.763975143432617200
+          end
+          item
+            Color = xFF01ECDC
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 1.000000000000000000
+        Fill.Gradient.StartPosition.Y = 0.788675189018249500
+        Fill.Gradient.StopPosition.Y = 0.211324840784072900
+        Size.Width = 320.000000000000000000
+        Size.Height = 431.000000000000000000
+        Size.PlatformDefault = False
+        object lytLogin: TLayout
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 431.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object GridLayout1: TGridLayout
+            Align = Client
+            ItemHeight = 100.000000000000000000
+            ItemWidth = 280.000000000000000000
+            Orientation = Horizontal
+            Margins.Left = 20.000000000000000000
+            Margins.Top = 100.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 100.000000000000000000
+            Size.Width = 280.000000000000000000
+            Size.Height = 231.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytUsuario: TLayout
+              Align = Client
+              Size.Width = 280.000000000000000000
+              Size.Height = 100.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object Label1: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, Style]
+                Size.Width = 280.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claWhite
+                Text = 'Usu'#225'rio'
+                TabOrder = 0
+              end
+              object Edit1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 1
+                TextSettings.FontColor = claWhite
+                Size.Width = 280.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Informe o Usu'#225'rio'
+                StyledSettings = [Family, Size, Style]
+              end
+            end
+            object Layout1: TLayout
+              Align = Client
+              Size.Width = 280.000000000000000000
+              Size.Height = 100.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label2: TLabel
+                Align = Top
+                StyledSettings = [Family, Size, Style]
+                Size.Width = 280.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claWhite
+                Text = 'Senha'
+                TabOrder = 0
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 1
+                Password = True
+                TextSettings.FontColor = claWhite
+                Size.Width = 280.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Digite a Senha'
+                StyledSettings = [Family, Size, Style]
+              end
+            end
+            object lytEntrar: TLayout
+              Opacity = 0.800000011920929000
+              Margins.Bottom = 60.000000000000000000
+              Position.Y = 200.000000000000000000
+              Size.Width = 280.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object ShadowEffect4: TShadowEffect
+                Distance = 3.000000000000000000
+                Direction = 45.000000000000000000
+                Softness = 0.300000011920929000
+                Opacity = 0.600000023841857900
+                ShadowColor = claBlack
+              end
+              object RoundRect1: TRoundRect
+                Align = Client
+                Fill.Kind = Gradient
+                Fill.Gradient.Points = <
+                  item
+                    Color = xFFE59600
+                    Offset = 0.003105590119957924
+                  end
+                  item
+                    Color = xFFEDDD00
+                    Offset = 1.000000000000000000
+                  end
+                  item
+                    Color = xFFE3E3E3
+                    Offset = 1.000000000000000000
+                  end
+                  item
+                    Color = claWhite
+                    Offset = 1.000000000000000000
+                  end>
+                Fill.Gradient.StartPosition.X = 0.500000000000000000
+                Fill.Gradient.StartPosition.Y = 1.000000000000000000
+                Fill.Gradient.StopPosition.X = 0.499999970197677600
+                Fill.Gradient.StopPosition.Y = 0.000000000000000000
+                Size.Width = 280.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+              end
+              object lblEntrar: TLabel
+                Align = Contents
+                StyledSettings = []
+                Size.Width = 280.000000000000000000
+                Size.Height = 40.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Family = 'Goudy Old Style'
+                TextSettings.Font.Size = 24.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000005000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Login'
+                TabOrder = 0
+                OnClick = lblEntrarClick
+              end
+            end
+          end
+        end
+      end
+    end
+    object tbitemMenuPrincipal: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 160.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Menu Principal'
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lytMenuPrincipal: TLayout
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 431.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  object actAcaoLogin: TActionList
+    Left = 144
+    Top = 224
+    object mudaraba: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbitemMenuPrincipal
+    end
+  end
+end
